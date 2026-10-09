@@ -30,8 +30,10 @@ yarn-debug.log*
 yarn-error.log*
 .pnpm-debug.log*
 
-# env files (can opt-in for committing if needed)
+# env files (segredos ficam fora do Git)
 .env*
+# ...mas o exemplo de variáveis fica no repositório
+!.env.example
 
 # vercel
 .vercel
@@ -39,3 +41,9 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# banco de dados local
+*.db
+*.db-journal
+*.db-shm
+*.db-wal
